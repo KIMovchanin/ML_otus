@@ -1,0 +1,4 @@
+__main__ 2024-10-21 21:20:19,342 INFO Start main()
+__main__ 2024-10-21 21:20:19,342 INFO Parse arguments
+__main__ 2024-10-21 21:20:19,349 INFO data.json
+__main__ 2024-10-21 21:20:19,350 INFO Create model

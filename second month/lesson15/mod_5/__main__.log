@@ -1,0 +1,5 @@
+__main__ 2024-10-21 21:08:30,888 INFO Start main()
+__main__ 2024-10-21 21:08:30,888 INFO Parse arguments
+__main__ 2024-10-21 21:08:30,895 DEBUG [2.0, 3.0, 0.4, 5.0]
+__main__ 2024-10-21 21:08:30,896 INFO Create model
+__main__ 2024-10-21 21:08:30,896 ERROR All elements are great than zero
