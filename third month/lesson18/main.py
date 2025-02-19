@@ -1,13 +1,21 @@
-import numpy as np
-import pandas, matplotlib.pyplot as plt, seaborn
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-df = seaborn.load_dataset('tips')
+df = sns.load_dataset('tips')
 
-plt.figure(figsize=(8, 6))
-plt.hist(df['time'], color='darkgreen', edgecolor='black')
+plt.figure(figsize=(12, 6))
 
-plt.title('Гистограмма распределения признака "total_bill"')
+plt.subplot(1, 2, 1)
+sns.scatterplot(x='total_bill', y='tip', data=df[df['sex'] == 'Male'], hue='smoker')
+plt.title('Взаимосвязь total_bill и tip для Male')
 plt.xlabel('Total Bill')
-plt.ylabel('Frequency')
+plt.ylabel('Tip')
 
+plt.subplot(1, 2, 2)
+sns.scatterplot(x='total_bill', y='tip', data=df[df['sex'] == 'Female'], hue='smoker')
+plt.title('Взаимосвязь total_bill и tip для Female')
+plt.xlabel('Total Bill')
+plt.ylabel('Tip')
+
+plt.tight_layout()
 plt.show()
